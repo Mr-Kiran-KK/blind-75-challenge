@@ -13,8 +13,8 @@ function maxProfit(prices: number[]): number {
 
       right++;
     } else {
-      left++;
-      right++;
+    left = right;
+    right++;
     }
   }
   return currentProfit;
